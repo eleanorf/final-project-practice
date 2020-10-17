@@ -48,7 +48,12 @@ ui <- navbarPage(
                a("Opportunity Insights", 
                  href = "https://opportunityinsights.org/data/"),
                "called Household Income and Incarceration for Children from 
-               Low-Income Households by Census Tract, Race, and Gender."),
+               Low-Income Households by Census Tract, Race, and Gender. Because
+               this is not the data that I will be using for my final project, 
+               and its sole purose is for this milestone, I did not do any data
+               wrangling or cleaning. As a result, I also only have one Rmd 
+               file. I went to Kevin's study hall and he said that would be 
+               okay."),
              h3("About Me"),
              h4("Hello!"),
              p("My name is Eleanor Fitzgibbons and I study Government. You can 
