@@ -26,12 +26,17 @@ ui <- navbarPage(
              h4("This is Smaller Text"),
              a("Google", href = "https://google.com")),
     tabPanel("Model",
+             titlePanel("Model"),
+             p("Here is my graphic for Milestone #6. I am still working on data 
+               scraping to find the data that I will use for my final project,
+               but I am using this data for now for the purpose of milestones."),
              fluidPage(
                  selectInput("x", "X variable", choices = names(d)),
                  selectInput("y", "Y variable", choices = names(d)),
                  selectInput("geom", "geom", c("point", "column", "jitter", "line")),
                  plotOutput("plot")
-             )),
+             )
+             ),
     tabPanel("Discussion",
              titlePanel("Discussion Title"),
              p("Tour of the modeling choices you made and 
@@ -39,21 +44,10 @@ ui <- navbarPage(
     tabPanel("About", 
              titlePanel("About"),
              h3("Project Background and Motivations"),
-             p("Hello! I am planning on doing my final project in the realm of 
-               Criminal Justice. I have not yet found the data that I will use 
-               for my final project, but I have data that I am using for this 
-               Milestone. Kayla has been helping me reach out to organizations 
-               that I can potentially work with for the final project. The data
-               that I am using today is from", 
-               a("Opportunity Insights", 
-                 href = "https://opportunityinsights.org/data/"),
-               "called Household Income and Incarceration for Children from 
-               Low-Income Households by Census Tract, Race, and Gender. Because
-               this is not the data that I will be using for my final project, 
-               and its sole purose is for this milestone, I did not do any data
-               wrangling or cleaning. As a result, I also only have one Rmd 
-               file. I went to Kevin's study hall and he said that would be 
-               okay."),
+             p("Hello! I am planning on doing my final project using data 
+             scraped from the internet that tests the sentiments of transcripts 
+             regarding Supreme Court nominees. I am planning on comparing 
+             different nominees and different news sources."),
              h3("About Me"),
              h4("Hello!"),
              p("My name is Eleanor Fitzgibbons and I study Government. You can 

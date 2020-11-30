@@ -1,0 +1,12 @@
+library(tidytext)
+library(ggpubr) 
+library(tidyverse)
+library(rvest)
+library(dplyr)
+library(tidytext)
+library(ggplot2)
+library(textreadr)
+library(sentimentr)
+
+d <- read_rtf("Supreme Court Nominee_ Amy Coney Barrett_ Was A Very Po.RTF")
+sentiment(d)
